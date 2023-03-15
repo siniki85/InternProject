@@ -24,14 +24,15 @@ gulp.task('compile-scss', async function () {
 });
 
 gulp.task('watch', async function () {
-  await gulp.watch(Paths.SCSS, gulp.series('compile-scss'));
+  gulp.watch(Paths.SCSS, gulp.series('compile-scss'));
 });
 
 gulp.task('open', async function () {
-  await gulp.src('pages/dashboard.html')
+  gulp.src('pages/dashboard.html')
     .pipe(open());
 });
 
-gulp.task('open-app', async function () {
-  await gulp.parallel('open', 'watch')
+gulp.task('open-app', async function (done) {
+  gulp.parallel('open', 'watch')
+  done();
 });
