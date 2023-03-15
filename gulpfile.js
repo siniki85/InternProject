@@ -32,6 +32,6 @@ gulp.task('open', function () {
     .pipe(open());
 });
 
-gulp.task('open-app', function () {
+gulp.task('open-app', async function () {
   gulp.parallel('open', 'watch')
 });
