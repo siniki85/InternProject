@@ -4,7 +4,10 @@ var sass = require('gulp-sass')(require('sass'));
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var open = require('gulp-open');
-gulp.task('build', () => gulp.series('open-app'));
+gulp.task('build', async function (done) {
+  gulp.series('open-app')
+  done();
+});
 
 var Paths = {
   HERE: './',
