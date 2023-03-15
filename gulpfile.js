@@ -14,7 +14,7 @@ var Paths = {
   SCSS: './assets/scss/**/**'
 };
 
-gulp.task('compile-scss', function () {
+gulp.task('compile-scss', async function () {
   return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -23,15 +23,15 @@ gulp.task('compile-scss', function () {
     .pipe(gulp.dest(Paths.CSS));
 });
 
-gulp.task('watch', function () {
-  gulp.watch(Paths.SCSS, gulp.series('compile-scss'));
+gulp.task('watch', async function () {
+  await gulp.watch(Paths.SCSS, gulp.series('compile-scss'));
 });
 
-gulp.task('open', function () {
-  gulp.src('pages/dashboard.html')
+gulp.task('open', async function () {
+  await gulp.src('pages/dashboard.html')
     .pipe(open());
 });
 
 gulp.task('open-app', async function () {
-  gulp.parallel('open', 'watch')
+  await gulp.parallel('open', 'watch')
 });
