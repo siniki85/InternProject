@@ -1,0 +1,96 @@
+.invalid input {
+    border: 1px solid #c82543;
+    box-shadow: rgba(148, 31, 31, 0.35) 0px 5px 15px;
+}
+
+.invalid p {
+    display: block;
+    color: #c82543;
+}
+
+.valid p {
+    display: none;
+}
+
+.valid input {
+    border: 2px solid rgb(95, 165, 145);
+    box-shadow: rgba(43, 131, 106, 0.35) 0px 5px 15px;
+}
+
+/* Start Select Multiple option in dropDown CSS */
+.mt-100 {
+    margin-top: 100px
+}
+
+.choices__list--multiple .choices__item {
+    background: #5e72e4;
+    border: none;
+}
+
+.choices__inner {
+    background-color: white !important;
+}
+
+.choices__input {
+    background-color: white;
+}
+
+/* End Select Multiple option in dropDown CSS */
+
+
+/* Start Chart CSS */
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 320px;
+    max-width: 660px;
+}
+
+.highcharts-figure svg {
+    border-radius: 30px !important;
+    /* padding: 20px; */
+}
+.highcharts-figure svg text[text-anchor="end"]{
+    display: none;
+}
+
+.highcharts-figure .highcharts-exporting-group {
+    display: none;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+/* end Chart CSS */
