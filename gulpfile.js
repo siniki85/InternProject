@@ -23,7 +23,8 @@ gulp.task('compile-scss', async function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write(Paths.HERE))
-    .pipe(gulp.dest(Paths.CSS));
+    .pipe(gulp.dest(Paths.CSS))
+    .pipe(gulp.dest(Paths.DIST));
 });
 
 gulp.task('watch', async function () {
