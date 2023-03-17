@@ -19,7 +19,7 @@ function validation() {
             $(this).closest('div').addClass('valid');
         }
     });
-    $('input[type="number"]').on('keyup', function () {
+    $('input[id="mobileNo"]').on('keyup', function () {
         if (!$(this).val().match($regexMobileNo)) {
             $(this).closest('div').addClass('invalid');
             $(this).closest('div').removeClass('valid');
