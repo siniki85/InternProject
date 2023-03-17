@@ -7,8 +7,11 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/logo.jpg">
   <title>
-    Sales Dashboard
+    PM Dashboard
   </title>
+  <!-- Validation JS & CSS-->
+  <script src="../assets/js/jquery3.js"></script>
+  <link rel="stylesheet" href="../assets/css/validation.css">
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -123,11 +126,11 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="../pages/sign-in.html">
+          <a class="nav-link " href="/index.html">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-collection text-info text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Sign In</span>
+            <span class="nav-link-text ms-1">Logout</span>
           </a>
         </li>
       </ul>
@@ -185,19 +188,19 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">Last name </label>
-                    <input class="form-control" type="email" value="Lucky">
+                    <input class="form-control" type="text" value="Lucky">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">Phone No.</label>
-                    <input class="form-control" type="text" value="9872345781">
+                    <input class="form-control" type="text" value="9872345781" id="mobileNo">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">Email address</label>
-                    <input class="form-control" type="text" value="jesse@example.com">
+                    <input class="form-control" type="email" value="jesse@example.com">
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -209,7 +212,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">Aadhar no.</label>
-                    <input class="form-control" type="number" value="369821457430">
+                    <input class="form-control" type="number" value="369821457430" id="aadhar">
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -255,7 +258,7 @@
                 <div class="col-md-4">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">Postal code</label>
-                    <input class="form-control" type="text" value="437300">
+                    <input class="form-control" type="text" value="437300" id="postal_code">
                   </div>
                 </div>
               </div>
@@ -379,6 +382,7 @@
   </div>
   </div>
   <!--   Core JS Files   -->
+  <script src="../assets/js/validation.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
