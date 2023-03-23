@@ -9,6 +9,9 @@
   <title>
     PM Dashboard
   </title>
+  <!-- Validation JS & CSS-->
+  <script src="../assets/js/jquery3.js"></script>
+  <link rel="stylesheet" href="../assets/css/validation.css">
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -23,12 +26,16 @@
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
-  <div class="position-absolute w-100 min-height-300 top-0" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg'); background-position-y: 50%;">
+  <div class="position-absolute w-100 min-height-300 top-0"
+    style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg'); background-position-y: 50%;">
     <span class="mask bg-primary opacity-6"></span>
   </div>
-  <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
+  <aside
+    class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
+    id="sidenav-main">
     <div class="sidenav-header">
-      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+        aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href="../pages/dashboard.html">
         <img src="../assets/img/logo.jpg" class="navbar-brand-img h-100" alt="main_logo">
         <span class="ms-1 font-weight-bold"> PM Dashboard </span>
@@ -39,48 +46,11 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="../pages/dashboard.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Dashboard</span>
-          </a>
-        </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Team</h6>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/addTeam.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="bi bi-person-plus-fill text-dark text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Add Team</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/viewTeam.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="bi bi-people-fill text-dark text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">View Team</span>
-          </a>
-        </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Ticket</h6>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/addTicket.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="bi bi-ticket-fill text-dark text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Add Ticket</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/viewTicket.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="bi bi-ticket-detailed text-dark text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">View Ticket</span>
           </a>
         </li>
         <li class="nav-item mt-3">
@@ -88,54 +58,21 @@
         </li>
         <li class="nav-item">
           <a class="nav-link " href="../pages/viewProject.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="bi bi-clipboard-data text-dark text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">View Projects</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/assign.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="bi bi-arrow-bar-right text-dark text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Assign Task/Team</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/viewDetails.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="bi bi-arrow-down-square text-dark text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">View Task Details</span>
-          </a>
-        </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/profile.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Profile</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/index.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-collection text-info text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Logout</span>
+            <span class="nav-link-text ms-1">Project</span>
           </a>
         </li>
       </ul>
     </div>
   </aside>
-  <div class="main-content position-relative max-height-vh-100 h-100">
+  <div class="main-content position-relative max-height-vh-100 h-100 main-navbarControl">
     <!-- Navbar -->
-    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
-      <div class="container-fluid pt-3 px-3">
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur"
+      data-scroll="false">
+      <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
@@ -143,14 +80,11 @@
           </ol>
           <h6 class="font-weight-bolder text-white mb-0">View Project</h6>
         </nav>
+
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
-            <div class="input-group">
-              <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
-              <input type="text" class="form-control" placeholder="Type here...">
-            </div>
           </div>
-          <ul class="navbar-nav  justify-content-end">
+          <ul class="navbar-nav justify-content-end">
             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
                 <div class="sidenav-toggler-inner">
@@ -160,179 +94,192 @@
                 </div>
               </a>
             </li>
+          </ul>
+        </div>
+
+        <div class="dropdown me-4">
+          <a class="btn bg-gradient-primary dropdown-toggle title" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../../../assets/img/team-1.jpg" class="avatar avatar-sm me-2" alt="user1">
+            Niki Patel
+          </a>
+
+          <ul class="dropdown-menu profile-menu" style="top: 1.0rem !important;" aria-labelledby="dropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="../pages/profile.html">
+                <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+                &nbsp;
+                Profile
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/index.html">
+                <i class="bi bi-box-arrow-right text-dark text-sm opacity-10"></i> &nbsp;
+                Logout
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- End Navbar -->
     <div class="container-fluid py-4 my-5">
-        <div class="row">
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header pb-0">
-                  <h6>Project Table</h6>
-                </div>
-                <div class="card-body px-0 pt-0 pb-2">
-                  <div class="table-responsive p-0">
-                    <table class="table align-items-center mb-0">
-                      <thead>
-                        <tr>
-                          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Title</th>
-                          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Technology</th>
-                          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Client Name</th>
-                          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Estimated Total Cost</th>
-                          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Estimated Hours</th>
-                          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">PM/TL</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">Prject Workflow Management</p>
-                          </td>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">.Net</p>
-                          </td>
-                          <td>
-                            <div class="d-flex px-2 py-1">
-                              <div>
-                                <img src="../assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="user1">
-                              </div>
-                              <div class="d-flex flex-column justify-content-center">
-                                <h6 class="mb-0 text-sm">John Michael</h6>
-                                <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">25000</p>
-                          </td>
-                          <td class="align-middle ps-4 text-sm">
-                            <p class="text-xs font-weight-bold mb-0">100 Hours</p>
-                          </td>
-                          <td class="align-middle ps-4">
-                            <span class="text-secondary text-xs font-weight-bold">Alexa Liras</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">Prject Workflow Management</p>
-                          </td>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">.Net</p>
-                          </td>
-                          <td>
-                            <div class="d-flex px-2 py-1">
-                              <div>
-                                <img src="../assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="user1">
-                              </div>
-                              <div class="d-flex flex-column justify-content-center">
-                                <h6 class="mb-0 text-sm">John Michael</h6>
-                                <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">25000</p>
-                          </td>
-                          <td class="align-middle ps-4 text-sm">
-                            <p class="text-xs font-weight-bold mb-0">100 Hours</p>
-                          </td>
-                          <td class="align-middle ps-4">
-                            <span class="text-secondary text-xs font-weight-bold">Alexa Liras</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">Prject Workflow Management</p>
-                          </td>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">.Net</p>
-                          </td>
-                          <td>
-                            <div class="d-flex px-2 py-1">
-                              <div>
-                                <img src="../assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="user1">
-                              </div>
-                              <div class="d-flex flex-column justify-content-center">
-                                <h6 class="mb-0 text-sm">John Michael</h6>
-                                <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">25000</p>
-                          </td>
-                          <td class="align-middle ps-4 text-sm">
-                            <p class="text-xs font-weight-bold mb-0">100 Hours</p>
-                          </td>
-                          <td class="align-middle ps-4">
-                            <span class="text-secondary text-xs font-weight-bold">Alexa Liras</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">Prject Workflow Management</p>
-                          </td>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">.Net</p>
-                          </td>
-                          <td>
-                            <div class="d-flex px-2 py-1">
-                              <div>
-                                <img src="../assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="user1">
-                              </div>
-                              <div class="d-flex flex-column justify-content-center">
-                                <h6 class="mb-0 text-sm">John Michael</h6>
-                                <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">25000</p>
-                          </td>
-                          <td class="align-middle ps-4 text-sm">
-                            <p class="text-xs font-weight-bold mb-0">100 Hours</p>
-                          </td>
-                          <td class="align-middle ps-4">
-                            <span class="text-secondary text-xs font-weight-bold">Alexa Liras</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">Prject Workflow Management</p>
-                          </td>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">.Net</p>
-                          </td>
-                          <td>
-                            <div class="d-flex px-2 py-1">
-                              <div>
-                                <img src="../assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="user1">
-                              </div>
-                              <div class="d-flex flex-column justify-content-center">
-                                <h6 class="mb-0 text-sm">John Michael</h6>
-                                <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="ps-4">
-                            <p class="text-xs font-weight-bold mb-0">25000</p>
-                          </td>
-                          <td class="align-middle ps-4 text-sm">
-                            <p class="text-xs font-weight-bold mb-0">100 Hours</p>
-                          </td>
-                          <td class="align-middle ps-4">
-                            <span class="text-secondary text-xs font-weight-bold">Alexa Liras</span>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-4">
+            <div class="card-header pb-0">
+              <h6>Project Table</h6>
+            </div>
+            <div class="card-body px-0 pt-0 pb-2">
+              <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Title</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Technology</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Client Name</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Estimated Hours
+                      </th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">PM/TL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="ps-4">
+                        <a href="../pages/viewDetails.html" class="text-sm fw-bolder mb-0 text-dark text-decoration-underline">Workflow Management</a>
+                      </td>
+                      <td class="ps-4">
+                        <p class="text-xs font-weight-bold mb-0">.Net</p>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">John Michael</h6>
+                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="ps-4">
+                        <p class="text-xs font-weight-bold mb-0">100 Hours</p>
+                      </td>
+                      <td class="align-middle ps-4">
+                        <span class="text-secondary text-xs font-weight-bold">Alexa Liras</span>
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="ps-4">
+                        <a href="../pages/viewDetails.html" class="text-sm fw-bolder mb-0 text-dark text-decoration-underline">Workflow Management</a>
+                      </td>
+                      <td class="ps-4">
+                        <p class="text-xs font-weight-bold mb-0">.Net</p>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">John Michael</h6>
+                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="ps-4">
+                        <p class="text-xs font-weight-bold mb-0">100 Hours</p>
+                      </td>
+                      <td class="align-middle ps-4">
+                        <span class="text-secondary text-xs font-weight-bold">Alexa Liras</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="ps-4">
+                        <a href="../pages/viewDetails.html" class="text-sm fw-bolder mb-0 text-dark text-decoration-underline">Workflow Management</a>
+                      </td>
+                      <td class="ps-4">
+                        <p class="text-xs font-weight-bold mb-0">.Net</p>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">John Michael</h6>
+                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="ps-4">
+                        <p class="text-xs font-weight-bold mb-0">100 Hours</p>
+                      </td>
+                      <td class="align-middle ps-4">
+                        <span class="text-secondary text-xs font-weight-bold">Alexa Liras</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="ps-4">
+                        <a href="../pages/viewDetails.html" class="text-sm fw-bolder mb-0 text-dark text-decoration-underline">Workflow Management</a>
+                      </td>
+                      <td class="ps-4">
+                        <p class="text-xs font-weight-bold mb-0">.Net</p>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">John Michael</h6>
+                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="ps-4">
+                        <p class="text-xs font-weight-bold mb-0">100 Hours</p>
+                      </td>
+                      <td class="align-middle ps-4">
+                        <span class="text-secondary text-xs font-weight-bold">Alexa Liras</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="ps-4">
+                        <a href="../pages/viewDetails.html" class="text-sm fw-bolder mb-0 text-dark text-decoration-underline">Workflow Management</a>
+                      </td>
+                      <td class="ps-4">
+                        <p class="text-xs font-weight-bold mb-0">.Net</p>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">John Michael</h6>
+                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="ps-4">
+                        <p class="text-xs font-weight-bold mb-0">100 Hours</p>
+                      </td>
+                      <td class="align-middle ps-4">
+                        <span class="text-secondary text-xs font-weight-bold">Alexa Liras</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
+        </div>
+      </div>
       <footer class="footer pt-3  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
@@ -350,13 +297,15 @@
                   <a href="https://shaligraminfotech.com" class="nav-link text-muted" target="_blank">Shaligram</a>
                 </li>
                 <li class="nav-item">
-                  <a href="https://shaligraminfotech.com/company/who-we-are" class="nav-link text-muted" target="_blank">About Us</a>
+                  <a href="https://shaligraminfotech.com/company/who-we-are" class="nav-link text-muted"
+                    target="_blank">About Us</a>
                 </li>
                 <li class="nav-item">
                   <a href="https://shaligraminfotech.com/blogs" class="nav-link text-muted" target="_blank">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a href="https://shaligraminfotech.com/term-conditions" class="nav-link pe-0 text-muted" target="_blank">T&C</a>
+                  <a href="https://shaligraminfotech.com/term-conditions" class="nav-link pe-0 text-muted"
+                    target="_blank">T&C</a>
                 </li>
               </ul>
             </div>
@@ -390,7 +339,8 @@
         </div>
         <a href="javascript:void(0)" class="switch-trigger background-color">
           <div class="badge-colors my-2 text-start">
-            <span class="badge filter bg-gradient-primary active" data-color="primary" onclick="sidebarColor(this)"></span>
+            <span class="badge filter bg-gradient-primary active" data-color="primary"
+              onclick="sidebarColor(this)"></span>
             <span class="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
             <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
             <span class="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
@@ -404,8 +354,10 @@
           <p class="text-sm">Choose between 2 different sidenav types.</p>
         </div>
         <div class="d-flex">
-          <button class="btn bg-gradient-primary w-100 px-3 mb-2 active me-2" data-class="bg-white" onclick="sidebarType(this)">White</button>
-          <button class="btn bg-gradient-primary w-100 px-3 mb-2" data-class="bg-default" onclick="sidebarType(this)">Dark</button>
+          <button class="btn bg-gradient-primary w-100 px-3 mb-2 active me-2" data-class="bg-white"
+            onclick="sidebarType(this)">White</button>
+          <button class="btn bg-gradient-primary w-100 px-3 mb-2" data-class="bg-default"
+            onclick="sidebarType(this)">Dark</button>
         </div>
         <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
         <!-- Navbar Fixed -->
@@ -422,6 +374,10 @@
             <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version" onclick="darkMode(this)">
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
